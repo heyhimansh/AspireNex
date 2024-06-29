@@ -36,7 +36,7 @@
   html,
   body {
     overflow-x: hidden;
-    background-color: #420fe7; 
+    background-color:#0096c7; 
   }
 
   .img {
@@ -69,7 +69,7 @@
     height: 100%;
     top: 0;
     right: 0;
-    background: #420fe7;
+    background:#0096c7;
   }
 }
 
@@ -128,11 +128,11 @@
 }
 
 #projects {
-  /* background: linear-gradient(0deg, rgba(70, 19, 230, 1) 0%, #420fe7 90%); */
+  /* background: linear-gradient(0deg, rgba(70, 19, 230, 1) 0%,#0096c7 90%); */
 }
 
 #contact-section {
-  /* background: linear-gradient(0deg, #420fe7 0%, rgba(70, 19, 230, 1) 95%); */
+  /* background: linear-gradient(0deg,#0096c7 0%, rgba(70, 19, 230, 1) 95%); */
 }
 
 .bg-primary {

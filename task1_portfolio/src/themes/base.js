@@ -1,6 +1,6 @@
 import { createTheme } from "./utils";
 const baseTheme = createTheme({
-  primary: "#420fe7",
+  primary: "#ade8f4",
   secondary: "red",
   textBase: "yellow"
 });
