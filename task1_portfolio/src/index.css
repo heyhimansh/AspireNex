@@ -32,10 +32,13 @@
   src: url(./assets/Gilmer-Font/Gilmer\ Regular.otf);
 }
 
+/* *{
+  box-sizing: border-box;
+} */
 @layer base {
   html,
   body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background-color:#0096c7; 
   }
 
