@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 import { BsFileEarmarkPdf, BsGithub } from "react-icons/bs";
-import { FiTwitter } from "react-icons/fi";
+import { FiLinkedin } from "react-icons/fi";
 import { AiOutlineInstagram } from "react-icons/ai";
-import resume from "../../assets/file/resume.pdf";
+
 
 const Contact = ({color}) => {
   useEffect(() => {
@@ -77,17 +77,10 @@ const Contact = ({color}) => {
             target="_blank"
             className="text-[#0090c7] font-Glimer-Medium"
           >
-            LinkedIn
-          </a>
-          . Sometimes I blog about some of my work on{" "}
-          <a
-            href="#"
-            target="_blank"
-            className="text-[#0090c7] font-Glimer-Medium"
-          >
-            Dev.to
+            LinkedIn.
+          
           </a>{" "}
-          and some experiments on{" "}
+           Occasionally, I share my experiments on {" "}
           <a
             href="https://github.com/heyhimanshu"
             target="_blank"
@@ -121,11 +114,11 @@ const Contact = ({color}) => {
             <BsGithub className="social-icon h-7 w-7 sm:h-8 sm:w-8 xl:h-9 xl:w-9 2xl:h-10 2xl:w-10" />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/himanshu-rathore-537885202/"
             target="_blank"
             className="flex items-center justify-center flex-col text-lg text-[#0096c7]"
           >
-            <FiTwitter className="social-icon h-7 w-7 sm:h-8 sm:w-8 xl:h-9 xl:w-9 2xl:h-10 2xl:w-10" />
+            <FiLinkedin className="social-icon h-7 w-7 sm:h-8 sm:w-8 xl:h-9 xl:w-9 2xl:h-10 2xl:w-10" />
           </a>
         </div>
       </div>

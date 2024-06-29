@@ -1,17 +1,16 @@
 import { useEffect } from "react";
-import hirely from "../../assets/images/Hirely.png";
-import easyStaff from "../../assets/images/EasyStaff.png";
-import formify from "../../assets/images/Formify.png";
-import bloggy from "../../assets/images/Bloggy.png";
-import planitio from "../../assets/images/Planitio.png";
-import learningCafe from "../../assets/images/LearningCafe.png";
+import lawgpt from "../../assets/images/lawgpt.png";
+import coin from "../../assets/images/coin.png";
+import bank from "../../assets/images/bank.png";
+
+import realestatehub from "../../assets/images/realestatehub.png";
 import { BsGithub, BsArrowRight } from "react-icons/bs";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Projects = ({color}) => {
+const Projects = ({ color }) => {
   useEffect(() => {
     let containers = document.querySelectorAll(".container");
 
@@ -120,36 +119,41 @@ const Projects = ({color}) => {
         id="project-heading"
         className="text-[#0096c7] font-Glimer font-semibold z-40 lg:mb-32 mb-20 vvs:text-[4rem] sm:text-[5.2rem] md:text-[6.4rem] lg:text-[5.5rem] xl:text-[9.2rem] 2xl:text-[10.8rem]  text-[3.5rem] leading-[3.5rem] sm:leading-[5.5rem] md:leading-[6rem] lg:leading-[7rem] xl:leading-[9rem] 2xl:leading-[10rem]  cursor-default"
       >
-        Featured Projects     ////
+        Featured Projects ////
       </h1>
       <div className="sm:space-y-40 space-y-30 xl:space-y-[35vh] z-30">
-        {/* LearningCafe */}
+        {/* realstatehub */}
         <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
-          <div className={`lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper bg-${color}`}>
+          <div
+            className={`lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper bg-${color}`}
+          >
             <img
-              src={learningCafe}
+              src={realestatehub}
               alt="project image"
-              className="absolute rounded-lg w-[90%] object-cover h-[90%] img"
+              className="absolute rounded-lg w-[90%] object-contain h-[90%] img"
             />
             {/* <div className={`img-container absolute top-0 right-0 bg-${color} w-full h-full`}></div> */}
           </div>
 
           <div className="text-container text-[#0096c7] lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3">
             <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-              <div className={`content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-${color}`}>
-                <div className="content-line-inner">Learning Cafe</div>
+              <div
+                className={`content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-${color}`}
+              >
+                <div className="content-line-inner">RealEstateHub </div>
               </div>
             </h1>
             <p className="font-normal cursor-default font-Glimer-Light text-[#0096c7]/70 xl:text-xl  sm:text-xl 2xl:text-3xl vvs:text-base text-sm lg:text-right">
-              A platform for posting courses which are designed as per the
-              Industry demand with full Career Assistance.
+              Welcome to RealEstateHub, a full-stack real estate project that
+              enables users to seamlessly buy, sell, and book visits for various
+              real estate properties.
             </p>
             <div className="btn-row flex justify-start space-x-6 items-center lg:justify-end">
               <div className="github-btn">
                 <a
                   className="icon "
                   target="_blank"
-                  href="https://github.com/tarunfy/learningcafe"
+                  href="https://github.com/heyhimansh/RealEstateHub"
                 >
                   <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-[#0096c7]/70 hover:text-[#0096c7]" />
                 </a>
@@ -158,7 +162,7 @@ const Projects = ({color}) => {
                 <a
                   className="icon"
                   target="_blank"
-                  href="https://learningcafe.co.in/"
+                  href="https://real-estate-hub-rho.vercel.app/"
                 >
                   <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-[#0096c7] transition duration-200 ease-in-out text-[#0096c7]/70" />
                 </a>
@@ -167,24 +171,27 @@ const Projects = ({color}) => {
           </div>
         </div>
 
-        {/* Hirely */}
+        {/* LawGPT */}
         <div className="container lg:space-x-2  flex flex-col-reverse lg:flex-row lg:justify-between  lg:items-center items-start invisible ">
           <div className="text-container text-[#0096c7] lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 ">
             <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-              <div className={`content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-${color}`}>
-                <div className="content-line-inner">Hirely</div>
+              <div
+                className={`content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-${color}`}
+              >
+                <div className="content-line-inner">LawGPT</div>
               </div>
             </h1>
             <p className="font-normal cursor-default font-Glimer-Light text-[#0096c7]/70 xl:text-2xl sm:text-xl 2xl:text-3xl vvs:text-base text-sm">
-              Hirely is a platform where candidates can get hired by the
-              recruiters from different upcoming starups.
+              LawGPT is an innovative project designed to provide comprehensive
+              legal assistance and streamline case-solving processes for
+              lawyers.
             </p>
             <div className="btn-row flex justify-start space-x-6 items-center">
               <div className="github-btn">
                 <a
                   className="icon "
                   target="_blank"
-                  href="https://github.com/tarunfy/Hirely"
+                  href="https://github.com/SriPrarabdha/LegalBrain.ai"
                 >
                   <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-[#0096c7]/70 hover:text-[#0096c7]" />
                 </a>
@@ -193,7 +200,7 @@ const Projects = ({color}) => {
                 <a
                   className="icon"
                   target="_blank"
-                  href="https://hirely.vercel.app/"
+                  href="https://legalbrain-tan.vercel.app/"
                 >
                   <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-[#0096c7] transition duration-200 ease-in-out text-[#0096c7]/70" />
                 </a>
@@ -201,43 +208,57 @@ const Projects = ({color}) => {
             </div>
           </div>
 
-          <div className={`lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper bg-${color}`}>
+          <div
+            className={`lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper bg-${color}`}
+          >
             <img
-              src={hirely}
+              src={lawgpt}
               alt="project image"
-              className="absolute rounded-lg w-[90%] object-cover h-[90%] img"
+              className="absolute rounded-lg w-[90%] object-contain h-[90%] img"
             />
-            <div className={`img-container absolute top-0 left-0 bg-${color} w-full h-full`}></div>
+            <div
+              className={`img-container absolute top-0 left-0 bg-${color} w-full h-full`}
+            ></div>
           </div>
         </div>
 
-        {/* Formify */}
+        {/*  Bank's Responsive Website   */}
         <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
-          <div className={`lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper bg-${color}`}>
+          <div
+            className={`lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper bg-${color}`}
+          >
             <img
-              src={formify}
+              src={bank}
               alt="project image"
-              className="absolute rounded-lg w-[90%] object-cover h-[90%] img"
+              className="absolute rounded-lg w-[90%] object-contain h-[90%] img"
             />
-            <div className={`img-container absolute top-0 right-0 bg-${color} w-full h-full`}></div>
+            <div
+              className={`img-container absolute top-0 right-0 bg-${color} w-full h-full`}
+            ></div>
           </div>
 
           <div className="text-container text-[#0096c7] lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3">
             <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-              <div className={`content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-${color}`}>
-                <div className="content-line-inner">Formify</div>
+              <div
+                className={`content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-${color}`}
+              >
+                <div className="content-line-inner">
+                  {" "}
+                  Bank's Responsive Website{" "}
+                </div>
               </div>
             </h1>
             <p className="font-normal cursor-default font-Glimer-Light text-[#0096c7]/70 xl:text-2xl  sm:text-xl 2xl:text-3xl vvs:text-base text-sm lg:text-right">
-              The fastest and the easiest way to create forms and collect
-              submissions on the internet.
+              This web application is your sole frontend project, designed to
+              provide users with easy access to banking services across various
+              devices.
             </p>
             <div className="btn-row flex justify-start space-x-6 items-center lg:justify-end">
               <div className="github-btn">
                 <a
                   className="icon "
                   target="_blank"
-                  href="https://github.com/tarunfy/formify"
+                  href="https://github.com/heyhimansh/bank_responsive_web"
                 >
                   <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-[#0096c7]/70 hover:text-[#0096c7]" />
                 </a>
@@ -246,7 +267,7 @@ const Projects = ({color}) => {
                 <a
                   className="icon"
                   target="_blank"
-                  href="https://formifyy.vercel.app/"
+                  href="https://bank-resposnive-web-home.vercel.app/"
                 >
                   <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-[#0096c7] transition duration-200 ease-in-out text-[#0096c7]/70" />
                 </a>
@@ -255,24 +276,26 @@ const Projects = ({color}) => {
           </div>
         </div>
 
-        {/* Easy Staff */}
+        {/* COIN TRACK */}
         <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
           <div className="text-container text-[#0096c7] lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 ">
             <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-              <div className={`content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-${color}`}>
-                <div className="content-line-inner">Easy Staff</div>
+              <div
+                className={`content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-${color}`}
+              >
+                <div className="content-line-inner">Coin Track</div>
               </div>
             </h1>
             <p className="font-normal cursor-default font-Glimer-Light text-[#0096c7]/70 xl:text-2xl  sm:text-xl 2xl:text-3xl vvs:text-base text-sm">
-              Easy Staff allows you to manage your staff's attendance, salary
-              and payments in few clicks.
+              CoinTrack is an advanced cryptocurrency application built using
+              React, Redux Toolkit, Ant Design, Chart.js, and RapidAPI.
             </p>
             <div className="btn-row flex justify-start space-x-6 items-center">
               <div className="github-btn">
                 <a
                   className="icon "
                   target="_blank"
-                  href="https://github.com/tarunfy/EasyStaff"
+                  href="https://github.com/heyhimansh/CoinTrack"
                 >
                   <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-[#0096c7]/70 hover:text-[#0096c7]" />
                 </a>
@@ -281,7 +304,7 @@ const Projects = ({color}) => {
                 <a
                   className="icon"
                   target="_blank"
-                  href="https://tankhava-book.vercel.app/"
+                  href="https://cryptotrackgg.netlify.app/news"
                 >
                   <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-[#0096c7] transition duration-200 ease-in-out text-[#0096c7]/70" />
                 </a>
@@ -289,61 +312,21 @@ const Projects = ({color}) => {
             </div>
           </div>
 
-          <div className={`lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper bg-${color} `}>
+          <div
+            className={`lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper bg-${color} `}
+          >
             <img
-              src={easyStaff}
+              src={coin}
               alt="project image"
-              className="absolute rounded-lg w-[90%] object-cover h-[90%] img"
+              className="absolute rounded-lg w-[90%] object-contain h-[90%] img"
             />
-            <div className={`img-container absolute top-0 left-0 bg-${color} w-full h-full`}></div>
+            <div
+              className={`img-container absolute top-0 left-0 bg-${color} w-full h-full`}
+            ></div>
           </div>
         </div>
 
-        {/* Planitio */}
-        <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
-          <div className={`lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper bg-${color}`}>
-            <img
-              src={planitio}
-              alt="project image"
-              className="absolute w-full object-cover h-full img"
-            />
-            <div className={`img-container absolute top-0 right-0 bg-${color} w-full h-full`}></div>
-          </div>
-
-          <div className="text-container text-[#0096c7] lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3">
-            <h1 className="hidden-text cursor-default font-Glimer-Bold font-bold lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-              <div className={`content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-${color}`}>
-                <div className="content-line-inner">Planit.io</div>
-              </div>
-            </h1>
-            <p className="font-normal cursor-default font-Glimer-Light text-[#0096c7]/70 xl:text-2xl sm:text-xl 2xl:text-3xl vvs:text-base text-sm lg:text-right">
-              Now no more going back-n-forth in conducting meetings, Planit.io
-              makes it easy and elegant to schedule meetings.
-            </p>
-            <div className="btn-row flex justify-start space-x-6 items-center lg:justify-end">
-              <div className="github-btn">
-                <a
-                  className="icon "
-                  target="_blank"
-                  href="https://github.com/tarunfy/Planit.io"
-                >
-                  <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-[#0096c7]/70 hover:text-[#0096c7]" />
-                </a>
-              </div>
-              <div className="liveDemo-btn">
-                <a
-                  className="icon"
-                  target="_blank"
-                  href="https://planitio.vercel.app/"
-                >
-                  <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-[#0096c7] transition duration-200 ease-in-out text-[#0096c7]/70" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      
+       
       </div>
     </div>
   );
