@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Glimer-Outlined";
+  src: url(./assets/Gilmer-Font/Gilmer\ Outline.otf);
+}
+
+@font-face {
+  font-family: "Glimer-Bold";
+  src: url(./assets/Gilmer-Font/Gilmer\ Bold.woff);
+}
+
+@font-face {
+  font-family: "Glimer-Heavy";
+  src: url(./assets/Gilmer-Font/Gilmer\ Heavy.otf);
+}
+
+@font-face {
+  font-family: "Glimer-Light";
+  src: url(./assets/Gilmer-Font/Gilmer\ Light.otf);
+}
+
+@font-face {
+  font-family: "Glimer-Medium";
+  src: url(./assets/Gilmer-Font/Gilmer\ Medium.otf);
+}
+
+@font-face {
+  font-family: "Glimer-Regular";
+  src: url(./assets/Gilmer-Font/Gilmer\ Regular.otf);
+}
+
+@layer base {
+  html,
+  body {
+    overflow-x: hidden;
+    background-color: #420fe7; 
+  }
+
+  .img {
+    will-change: scale;
+  }
+
+  .img-container {
+    will-change: width;
+  }
+
+  .container {
+    will-change: visibility;
+  }
+
+  .cursor {
+    pointer-events: none;
+  }
+
+  .cursor__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .img-container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #420fe7;
+  }
+}
+
+.MuiTooltip-tooltip,
+.MuiTooltip-tooltipPlacementRight,
+.css-1spb1s5 {
+  background-color: #222 !important;
+  color: white !important;
+  border-radius: 50px !important;
+  padding: 1rem !important;
+  font-size: 0.8rem !important;
+  font-family: "Glimer-Regular", sans-serif !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.MuiTooltip-popper[data-popper-placement*="right"]
+  .css-ja5taz-MuiTooltip-tooltip {
+  transform: translateY(-20px) !important;
+}
+
+#tech-stack::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-image: radial-gradient(hsla(0, 0%, 100%, 0), #4613e6 60%); */
+}
+
+#tech-stack::after {
+  z-index: -10;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(hsla(0, 0%, 100%, 0), #4613e6 96%);
+}
+
+#tech-stack {
+  background: url(./assets/images/lines.svg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+
+@media screen and (min-width: 1280px) {
+  #tech-stack {
+    background: url(./assets/images/lines.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+  }
+}
+
+#projects {
+  /* background: linear-gradient(0deg, rgba(70, 19, 230, 1) 0%, #420fe7 90%); */
+}
+
+#contact-section {
+  /* background: linear-gradient(0deg, #420fe7 0%, rgba(70, 19, 230, 1) 95%); */
+}
+
+.bg-primary {
+  background: var(--theme-primary);
+}
+
+.bg-primary::before {
+  background: var(--theme-primary);
+}
+
+.pull-right {
+  float: right;
+}
