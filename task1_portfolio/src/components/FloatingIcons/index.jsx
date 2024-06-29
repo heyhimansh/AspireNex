@@ -4,9 +4,18 @@ import linkedin from "../../assets/images/linkedin.svg";
 import gmail from "../../assets/images/gmail.svg";
 import { motion } from "framer-motion";
 
+// const navigation = [
+//   { name: "Product", href: "#" },
+//   { name: "Features", href: "#" },
+//   { name: "Marketplace", href: "#" },
+//   { name: "Company", href: "#" },
+// ];
+
+
 const FloatingIcons = () => {
   return (
     <div className="z-[10] flex justify-between w-full items-center my-14">
+      
       <a href="mailto:himanshuaman14@gmail.com" className="social">
         <motion.span
           animate={{ opacity: 1, scale: 1 }}
@@ -44,6 +53,7 @@ const FloatingIcons = () => {
           </motion.span>
         </motion.span>
       </a>
+      
       <a href="https://github.com/heyhimansh" target="_blank" className="social">
         <motion.span
           animate={{ opacity: 1, scale: 1 }}
