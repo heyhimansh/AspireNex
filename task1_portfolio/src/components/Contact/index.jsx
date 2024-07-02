@@ -107,7 +107,7 @@ const Contact = ({color}) => {
             <AiOutlineInstagram className="social-icon h-7 w-7 sm:h-8 sm:w-8 xl:h-9 xl:w-9 2xl:h-10 2xl:w-10" />
           </a>
           <a
-            href="https://github.com/heyhimanshu"
+            href="https://github.com/heyhimansh"
             target="_blank"
             className="flex items-center justify-center flex-col text-lg text-[#0096c7]"
           >
