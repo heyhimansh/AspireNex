@@ -92,11 +92,34 @@ const SolveQuiz = ({ data }) => {
 
   return (
     <div className="min-h-screen bg-gray-900 flex justify-center items-center">
+      <div>
+        <header className="absolute inset-x-0 top-0 z-50">
+          <nav
+            className="flex items-center justify-between p-6 lg:px-8"
+            aria-label="Global"
+          >
+            <div className="flex lg:flex-1">
+              <a href="/" className="-m-1.5 p-1.5">
+                <span className="sr-only">Mind Mingle</span>
+                <img className="h-10 w-auto" src={logo} alt="" />
+              </a>
+            </div>
+
+            {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              Log in <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div> */}
+          </nav>
+        </header>
+      </div>
       <div className="max-w-lg w-full p-5 py-20 font-sans bg-white text-gray-900 rounded-lg shadow-lg">
         {onHomePage ? (
           <div className="flex flex-col items-center">
             <img src={logo} alt="Mind Mingle Logo" className="w-[20%] mb-5" />
-            <h1 className="text-3xl font-bold">Welcome to Mind Mingle, where learning meets fun!🧠</h1>
+            <h1 className="text-3xl font-bold">
+              Welcome to Mind Mingle, where learning meets fun!🧠
+            </h1>
             <p className="text-gray-700 text-lg mt-4">
               Your ultimate quiz creation and attempt platform, designed to
               elevate your learning experience effortlessly.
@@ -119,9 +142,7 @@ const SolveQuiz = ({ data }) => {
         ) : (
           <div>
             <div className="flex justify-between items-center mt-10 mb-5">
-              <h1 className="text-4xl font-bold">
-                Mind Mingle 🚀
-              </h1>
+              <h1 className="text-4xl font-bold">Mind Mingle 🚀</h1>
               <p className="text-gray-700 text-xl">
                 {index + 1} / {questions.length}
               </p>

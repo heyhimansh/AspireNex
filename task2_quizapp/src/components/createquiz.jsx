@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/log.png";
 
 const CreateQuiz = () => {
   const navigate = useNavigate();
@@ -39,6 +40,28 @@ const CreateQuiz = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 flex justify-center items-center">
+      <div>
+        <header className="absolute inset-x-0 top-0 z-50">
+          <nav
+            className="flex items-center justify-between p-6 lg:px-8"
+            aria-label="Global"
+          >
+            <div className="flex lg:flex-1">
+              <a href="/" className="-m-1.5 p-1.5">
+                <span className="sr-only">Mind Mingle</span>
+                <img className="h-10 w-auto" src={logo} alt="" />
+              </a>
+            </div>
+
+            {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              Log in <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div> */}
+          </nav>
+        </header>
+      </div>
+
       <div className="max-w-lg w-full p-5 font-sans bg-white text-gray-900 rounded-lg shadow-lg">
         <div className="mt-10 mb-5">
           <h1 className="text-3xl font-bold text-center hover:text-indigo-500 transition duration-300">
@@ -55,13 +78,16 @@ const CreateQuiz = () => {
               key={index}
               className="bg-gray-800 rounded-lg shadow p-4 mb-5 relative"
             >
+              <div className="p-2">
               <button
                 type="button"
                 onClick={() => deleteQuestion(index)}
-                className="text-3xl absolute top-2 right-2 text-red-500 hover:text-red-700 transition duration-300"
+                className="text-4xl absolute top-2 right-3 text-red-500 hover:text-red-700 transition duration-300"
               >
                 &times;
               </button>
+              </div>
+              <br />
 
               <div className="bg-indigo-700 text-white p-3 rounded-t-lg mb-3 text-lg">
                 <input

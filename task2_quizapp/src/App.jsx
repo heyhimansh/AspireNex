@@ -14,9 +14,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route>
         <Route path="/" element={<Hero />} />
         <Route path="/createquiz" element={<CreateQuiz />} />
         <Route path="/solvequiz" element={<SolveQuiz data={data} />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

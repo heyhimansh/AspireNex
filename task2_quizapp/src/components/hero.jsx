@@ -2,17 +2,15 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
+import { BsFileEarmarkPdf, BsGithub } from "react-icons/bs";
+import { FiLinkedin } from "react-icons/fi";
+import { AiOutlineInstagram } from "react-icons/ai";
+
 import Features from "./feature";
-import CreateQuiz from "./createquiz"
+
 import logo from "../assets/log.png";
 
 
-const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
-];
 
 export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -25,17 +23,13 @@ export default function Hero() {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Mind Mingle</span>
               <img className="h-10 w-auto" src={logo} alt="" />
             </a>
           </div>
 
-          {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div> */}
+        
         </nav>
       </header>
 
@@ -71,7 +65,7 @@ export default function Hero() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-2">
               <a
-                href="#"
+                href="/createquiz"
                 className="rounded-md bg-indigo-300 px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
@@ -94,6 +88,31 @@ export default function Hero() {
         </div>
       </div>
       <Features />
+      <div className="flex flex-col py-8  w-full space-y-6 items-center justify-center">
+        <div className="divide-x divide-solid  grid grid-cols-3 w-full">
+          <a
+            href="#"
+            target="_blank"
+            className="flex items-center justify-center flex-col text-lg text-indigo-600"
+          >
+            <AiOutlineInstagram className="social-icon h-7 w-7 sm:h-8 sm:w-8 xl:h-9 xl:w-9 2xl:h-10 2xl:w-10" />
+          </a>
+          <a
+            href="https://github.com/heyhimanshu"
+            target="_blank"
+            className="flex items-center justify-center flex-col text-lg  text-indigo-600"
+          >
+            <BsGithub className="social-icon h-7 w-7 sm:h-8 sm:w-8 xl:h-9 xl:w-9 2xl:h-10 2xl:w-10" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/himanshu-rathore-537885202/"
+            target="_blank"
+            className="flex items-center justify-center flex-col text-lg  text-indigo-600"
+          >
+            <FiLinkedin className="social-icon h-7 w-7 sm:h-8 sm:w-8 xl:h-9 xl:w-9 2xl:h-10 2xl:w-10" />
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
