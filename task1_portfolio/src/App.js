@@ -26,7 +26,7 @@ function App() {
           <a
             key={item.name}
             href={item.href}
-            className="text-sm font-semibold leading-6 text-[#0096c7] hover:text-[#48cae4] font-Glimer-Medium font-medium"
+            className="text-sm  leading-6 text-[#0096c7] hover:text-[#48cae4] font-Glimer-Medium font-medium"
           >
             {item.name}
           </a>
