@@ -82,7 +82,7 @@ const Contact = ({color}) => {
           </a>{" "}
            Occasionally, I share my experiments on {" "}
           <a
-            href="https://github.com/heyhimanshu"
+            href="https://github.com/heyhimansh"
             target="_blank"
             className="text-[#0090c7] font-Glimer-Medium"
           >
