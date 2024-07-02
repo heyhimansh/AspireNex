@@ -66,6 +66,7 @@ const Hero = ({ color }) => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="flex justify-between items-center"
           >
+            
             <div className="w-fit">
               <Tooltip
                 title={phrases[index]}

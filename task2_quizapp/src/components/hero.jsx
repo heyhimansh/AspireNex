@@ -5,18 +5,21 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { BsFileEarmarkPdf, BsGithub } from "react-icons/bs";
 import { FiLinkedin } from "react-icons/fi";
 import { AiOutlineInstagram } from "react-icons/ai";
-
-import Features from "./feature";
+import { motion } from "framer-motion";
 
 import logo from "../assets/log.png";
 
+import Features from "./feature";
 
 
 export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
 
   return (
+    
     <div className="bg-black/90">
+      
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
@@ -28,10 +31,16 @@ export default function Hero() {
               <img className="h-10 w-auto" src={logo} alt="" />
             </a>
           </div>
-
-        
         </nav>
       </header>
+     
+      <motion.div
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+        className="flex flex-col items-center"
+      >
+   
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
@@ -47,7 +56,7 @@ export default function Hero() {
           />
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
-        <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="bg-indigo-300 relative rounded-full px-3 py-1 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               <a href="#feature" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
@@ -70,7 +79,6 @@ export default function Hero() {
               >
                 Get started
               </a>
-              
             </div>
           </div>
         </div>
@@ -87,7 +95,9 @@ export default function Hero() {
           />
         </div>
       </div>
+      
       <Features />
+      </motion.div>
       <div className="flex flex-col py-8  w-full space-y-6 items-center justify-center">
         <div className="divide-x divide-solid  grid grid-cols-3 w-full">
           <a
