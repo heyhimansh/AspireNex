@@ -4,13 +4,6 @@ import linkedin from "../../assets/images/linkedin.svg";
 import gmail from "../../assets/images/gmail.svg";
 import { motion } from "framer-motion";
 
-// const navigation = [
-//   { name: "Product", href: "#" },
-//   { name: "Features", href: "#" },
-//   { name: "Marketplace", href: "#" },
-//   { name: "Company", href: "#" },
-// ];
-
 
 const FloatingIcons = () => {
   return (

@@ -3,6 +3,9 @@ import profilePhoto from "../../assets/images/dev.jpg";
 import Tooltip from "@mui/material/Tooltip";
 import { Fade } from "@mui/material";
 import { motion } from "framer-motion";
+
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+
 import AnimatedLetters from "../AnimatedLetters";
 import { Player } from "@lottiefiles/react-lottie-player";
 import FloatingIcons from "../FloatingIcons";
@@ -21,12 +24,7 @@ const phrases = [
   "checkout the website now ffs!",
 ];
 
-const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
-];
+
 
 const letters = [
   "I'm",
